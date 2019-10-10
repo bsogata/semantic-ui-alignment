@@ -1,0 +1,6 @@
+a, div, h1, h1 > small, p {
+  /*
+   * Note that !important is not necessary here because the tag selectors are sufficiently specific.
+   */
+  font-family: serif;
+}

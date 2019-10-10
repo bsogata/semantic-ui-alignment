@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Semantic UI Alignment Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <!-- Note the placement of styles.css; what happens if styles.css is loaded before semantic.min.css? -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </head>
+  <body>
+    <div class="ui container">
+      <h1>Introduction</h1>
+      <p>Some of you are confused about alignment in Semantic UI, just like this cat:</p>
+      <img class="ui medium image" src="images/f2863cfb-61a5-497b-9141-3abbdc2717481.jpg"
+           alt="A cat who is confused about alignment" />
+      <p>Your teaching assistant has therefore created some very rough examples for you to refer to</p>
+
+      <div class="ui divider"></div>
+
+      <h1>No alignment</h1>
+      <img class="ui medium image" src="images/rhum_curl_560.jpg"
+           alt="A cat without any clear sense of alignment" />
+
+      <div class="ui divider"></div>
+
+      <h1 class="ui center aligned header">
+        <a href="https://semantic-ui.com/elements/image.html#centered">Horizontal Alignment in Window</a>
+        <small>(technically horizontal alignment in the container, but the joke works better this way)</small>
+      </h1>
+      <img src="images/0017pd5q.jpg" class="ui large centered image"
+           alt="A cat who is center aligned in the window" />
+
+      <div class="ui divider"></div>
+
+      <h1>
+        <a href="https://semantic-ui.com/collections/grid.html#significant-word-order">
+          Horizontal Alignment in Columns
+        </a>
+      </h1>
+      <div class="ui celled two column grid">
+        <div class="row">
+          <div class="center aligned column">
+            <div>foo</div>
+            <div>bar</div>
+            <div>baz</div>
+
+            <div class="ui horizontal divider">or</div>
+
+            <div>Murphy's</div>
+            <div>Bar</div>
+            <div>Grill</div>
+
+            <div class="ui divider"></div>
+
+            (<code>['foo', 'bar', 'baz']</code> is shorter than <code>['murphy\'s', 'bar', 'grill']</code> though,
+            and <code>murphy's</code> is not a valid variable name)
+          </div>
+          <div class="column">
+            <img src="images/cats_eat2.jpg" class="ui centered image" alt="Horizontally aligned cats" />
+            <img src="images/catstack.jpg" class="ui centered image" alt="More horizontally aligned cats" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="center aligned sixteen wide column">
+            Even with <code>center aligned</code>, images are still not centered;
+            <code>center aligned</code> appears to apply only to text
+            and so the <code>centered</code> class must still be applied
+            to images and other components within the column
+            <img src="images/cats_eat2.jpg" class="ui image" alt="Horizontally aligned cats" />
+            <img src="images/catstack.jpg" class="ui image" alt="More horizontally aligned cats" />
+          </div>
+        </div>
+      </div>
+
+      <div class="ui divider"></div>
+
+      <h1>
+        <a href="https://semantic-ui.com/collections/grid.html#vertical-alignment">Vertical Alignment in Rows</a>
+      </h1>
+      <div class="ui celled five column grid">
+        <div class="middle aligned row">
+          <div class="column">
+            foo
+          </div>
+          <div class="column">
+            <img src="images/9459347239_47301421bb_z.jpg" class="ui medium image" alt="Vertically aligned cats" />
+          </div>
+          <div class="column">
+            <img src="images/cats-on-clothesline.jpg" class="ui small image" alt="Vertically aligned cats" />
+            <img src="images/9146947153_7bbf5d331c_z-844132351.jpg" class="ui small image"
+                 alt="Vertically aligned cats" />
+          </div>
+          <div class="column">
+            <img src="images/three-cats-560.jpg" class="ui medium image" alt="Vertically aligned cats" />
+          </div>
+          <div class="column">
+            bar
+          </div>
+        </div>
+      </div>
+
+      <div class="ui divider"></div>
+
+      <p>Combining horizontal and vertical alignment is left as an exercise for the reader</p>
+    </div>
+  </body>
+</html>
